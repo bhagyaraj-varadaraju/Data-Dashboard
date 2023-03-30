@@ -5,38 +5,106 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Header {
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Logo {
+  display: flex;
+  height: calc(10px + 2vmin);
+  padding-right: 10px;
+  padding-top: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Menu-item {
+  color: #fff;
+  list-style: none;
+  padding: 0 0 35px;
+  font-size: larger;
 }
 
-.card {
+a {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  flex: 0 1 auto;
+  position: relative;
+  text-decoration: none;
+}
+
+.App-row {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px 20px;
+  margin: 30px;
+  width: 100%;
+}
+
+.SummaryCard {
   padding: 2em;
+  backdrop-filter: blur(1px);
+  background-color: hsla(0,0%,100%,.1);
+
+  border-radius: 24px;
+  font-size: medium;
+  text-align: center;
 }
 
-.read-the-docs {
-  color: #888;
+.DashBoard {
+  backdrop-filter: blur(1px);
+  background-color: hsla(0,0%,100%,.1);
+  border-radius: 24px;
+  background-color: hsla(0,0%,100%,.092);
+  box-shadow: 0 15px 25px hsla(0,2%,50%,.154);
+  padding: 20px 20px 40px;
+  width: 100%;
+  margin: 30px;
+}
+
+.NavBar {
+  height: 100%;
+  width: 250px;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+
+  backdrop-filter: blur(1px);
+  background-color: hsla(0,0%,100%,.1);
+
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#mainTable {
+  width: 100%;
+}
+
+#mainTable th {
+  padding: 10px 20px;
+}
+
+#mainTable td {
+  padding: 5px 0px;
+}
+
+.btn {
+  background-color: #483d8b;
+  color: #fff;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+input {
+  background-color: #fff;
+  height: 30px;
+  border-radius: 5px;
+  color: black;
 }

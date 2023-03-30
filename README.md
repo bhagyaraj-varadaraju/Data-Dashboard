@@ -14,8 +14,8 @@ The following **required** functionality is completed:
 - [x] **Data uses the useEffect React hook and async/await syntax**
 - [x] **The app dashboard includes at least three summary statistics about the data such as**
   - [x] *Location information*
-  - [x] *Moonrise time*
-  - [x] *Moon phase*
+  - [x] *Sunrise time*
+  - [x] *Minimum temperature*
 - [x] **A search bar allows the user to search for an item in the fetched data**
 - [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
 
