@@ -17,12 +17,12 @@ The following **required** functionality is completed:
   - [x] *Sunrise time*
   - [x] *Minimum temperature*
 - [x] **A search bar allows the user to search for an item in the fetched data**
-- [x] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
 
 ## Video Walkthrough
 Here's a walkthrough of implemented user stories:
 
-
+https://user-images.githubusercontent.com/20358558/228724951-870d88d3-187b-4725-a5f2-503bb47e2f2d.mp4
 
 ## License
 
