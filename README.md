@@ -18,8 +18,7 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-
-
+https://user-images.githubusercontent.com/20358558/229676387-b4ff65a8-4c52-4212-982a-c33d63b86be8.mp4
 
 ## License
 
