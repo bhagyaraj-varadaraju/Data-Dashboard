@@ -1,28 +1,25 @@
-# Web Development Project 5 - *AstroDash*
+# Web Development Project 6 - *AstroDash*
 
 Submitted by: **Bhagya Raj Varadaraju**
 
 This web app: **This app displays weather information**
 
-Time spent: **10** hours spent in total
+Time spent: **4** hours spent in total
 
 ## Required Features
 
 The following **required** functionality is completed:
 
-- [x] **The list displays a list of data fetched using an API call**
-- [x] **Data uses the useEffect React hook and async/await syntax**
-- [x] **The app dashboard includes at least three summary statistics about the data such as**
-  - [x] *Location information*
-  - [x] *Sunrise time*
-  - [x] *Minimum temperature*
-- [x] **A search bar allows the user to search for an item in the fetched data**
-- [] **Multiple different filters (2+) allow the user to filter items in the database by specified categories**
+- [ ] **The app includes at least two unique chart developed using the fetched data that tell an interesting story**
+- [x] **Clicking on an item in the list view displays more details about it**
+- [x] **Clicking on an item has a direct, unique link to that item's detail view page**
 
 ## Video Walkthrough
+
 Here's a walkthrough of implemented user stories:
 
-https://user-images.githubusercontent.com/20358558/228724951-870d88d3-187b-4725-a5f2-503bb47e2f2d.mp4
+
+
 
 ## License
 

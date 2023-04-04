@@ -24,6 +24,7 @@ function DashBoard({list}) {
                     <th>Temperature</th>
                     <th>Sunset</th>
                     <th>Conditions</th>
+                    <th>Details</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -33,6 +34,7 @@ function DashBoard({list}) {
                     <td>{day.temp}</td>
                     <td>{day.sunset}</td>
                     <td>{day.conditions}</td>
+                    <td><a href={`/${day.datetime}`}> 🔗 </a></td>
                     </tr>
                 ))}
                 </tbody>

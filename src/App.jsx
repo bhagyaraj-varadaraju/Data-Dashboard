@@ -4,6 +4,8 @@ import NavBar from './Components/NavBar'
 import SummaryCard from './Components/SummaryCard'
 
 import './App.css'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import DetailsPage from './Components/DetailsPage'
 
 function App() {
   const [list, setList] = useState(null);
@@ -21,17 +23,25 @@ function App() {
 
   }, []);
 
+  const App1 = ({list}) => (
+    list ? <><div className="App-row">
+      <SummaryCard title="Location" value={list.address}/>
+      <SummaryCard title="Sun Rise" value={list.days[0].sunrise}/>
+      <SummaryCard title="Minimum Temperature" value={list.days[0].tempmin}/>
+    </div>
+    <DashBoard list={list} />
+    </> : null
+  );
+
   return (
     <div className="App">
-
-      <NavBar />
-      {list && <div className="App-row">
-        <SummaryCard title="Location" value={list.address}/>
-        <SummaryCard title="Sun Rise" value={list.days[0].sunrise}/>
-        <SummaryCard title="Minimum Temperature" value={list.days[0].tempmin}/>
-      </div>}
-
-      <DashBoard list={list}/>
+    <NavBar />  
+    <BrowserRouter>
+      <Routes>
+        <Route exact path='/:date' Component={() => <DetailsPage list={list?.days} />} />
+        <Route exact path='/' Component={() => <App1 list={list}/>} />
+      </Routes>
+    </BrowserRouter>
 
     </div>
   )
